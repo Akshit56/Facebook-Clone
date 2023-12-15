@@ -1,15 +1,32 @@
 import React from 'react'
 import "./Sidebar.css"
 import SidebarRow from "./SidebarRow";
-
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import EmojiFlagsIcon from '@mui/icons-material/EmojiFlags';
+import PeopleIcon from '@mui/icons-material/People';
+import ChatIcon from '@mui/icons-material/Chat';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 function Sidebar() {
   return (
     <div className='sidebar'>
-        <SidebarRow title='Pages' />
-        <SidebarRow title='Friends'  />
-        <SidebarRow />
-        <SidebarRow />
-        <SidebarRow />
+
+        <SidebarRow src='https://avatars.githubusercontent.com/u/92316352?s=400&u=bfe5bef0337f1f95dd9e94dfa2fec5be65407114&v=4' title='Akshit Gupta' /> 
+
+        <SidebarRow 
+            Icon={LocalHospitalIcon}
+            title="Covid-19 Information Center"
+            />
+
+        <SidebarRow Icon={EmojiFlagsIcon} title='Pages' />
+        <SidebarRow Icon={PeopleIcon} title='Friends'  />
+        <SidebarRow Icon={ChatIcon} title="Messenger" />
+        <SidebarRow Icon={StorefrontIcon} title="Marketplace" 
+        />
+        <SidebarRow Icon={VideoLibraryIcon} title="Videos" />
+        <SidebarRow Icon={ExpandMoreIcon} title="Marketplace" />
+
  
     </div>
   );
