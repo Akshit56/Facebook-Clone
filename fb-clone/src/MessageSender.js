@@ -15,7 +15,7 @@ function MessageSender() {
             <Avatar />
             <form>
                 <input type = "text" className='messageSender__input'
-                placeholder="What's on your mind"/>
+                placeholder="What's on your mind?"/>
                 <input placeholder='Image URL (Optional)' />
 
                 <button onClick={handleSubmit} type="submit" > 
