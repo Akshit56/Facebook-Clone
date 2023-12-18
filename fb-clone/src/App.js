@@ -5,18 +5,25 @@ import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import Widgets from "./Widgets"
 
+
 function App() {
+  const user = 'akshit';
   return (
     //BEM naming convention
     <div className="app">
- 
-      {/* Header */}
-      <Header />
-      <div className="app__body">
-        <Sidebar />
-        <Feed />
-        <Widgets />
-      </div>        
+      {!user ?  (
+        <login />   
+      ) : (
+        <>
+        <Header />
+        <div className="app__body">
+          <Sidebar />
+          <Feed />
+          <Widgets />
+        </div>
+      </>  
+      )}
+              
     </div>
   );
 }
