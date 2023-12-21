@@ -8,11 +8,13 @@ import ChatIcon from '@mui/icons-material/Chat';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useStateValue } from './StateProvider';
 function Sidebar() {
+  const[{ user }, dispatch] = useStateValue();
   return (
     <div className='sidebar'>
 
-        <SidebarRow src='https://avatars.githubusercontent.com/u/92316352?s=400&u=bfe5bef0337f1f95dd9e94dfa2fec5be65407114&v=4' title='Akshit Gupta' /> 
+        <SidebarRow src= {user.photoURL} title={user.displayName}/> 
 
         <SidebarRow 
             Icon={LocalHospitalIcon}
