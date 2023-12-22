@@ -4,12 +4,12 @@ import "./Widgets.css";
 function Widgets() {
   return (
     <div className='widgets'>
-        <iframe src = "https://www.youtube.com/embed/SvzPxtaQKgw"
+        <iframe src = "https://en.wikipedia.org/wiki/JavaScript"
         title = "YouTube"
         width = "340"
         height = "100%"
         style={ { border: "none", overflow: "hidden"} }
-        scrolling='no'
+        // scrolling='no'
         frameborder='0'
         allowTransparency='true'
         allow='encrypted-media'

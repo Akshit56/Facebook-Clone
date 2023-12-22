@@ -5,6 +5,8 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import { useStateValue } from './StateProvider';
+import db from "./Firebase"
+import firebase from 'firebase/compat/app';
 
 function MessageSender() {
     const [{ user }, dispatch ] = useStateValue();
@@ -14,6 +16,15 @@ function MessageSender() {
 
     const handleSubmit = e => {
         e.preventDefault(); //prevents the page to refresh
+
+
+        db.collection('posts').add ({
+            message: input,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            profilePic: user.photoURL,
+            username: user.displayName,
+            image: imageUrl,
+        })
 
         // some clever db stuff  
 
