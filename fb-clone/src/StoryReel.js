@@ -15,7 +15,7 @@ function StoryReel() {
         <Story 
             image="https://freepixel-prod.s3.amazonaws.com/thumb/free-illustration-graphics-this-stock-photo-showcases-a-dynamic-display-of-swirling-vibrant-colors-in-the-form-of-a-circular-wa-th-10021970.jpg"
             profileSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT90bnSnjd6XP1r2kUfL8LGE3juJflG0yIN5w&usqp=CAU"
-            title="Riya"
+            title="Frankie"
         />
         
         <Story 
@@ -27,7 +27,7 @@ function StoryReel() {
         <Story 
             image="https://static.vecteezy.com/system/resources/previews/026/430/317/large_2x/the-abstract-wallpaper-design-features-a-combination-of-vibrant-colours-and-futuristic-lines-that-create-a-visually-stunning-graphic-with-a-textured-light-background-with-ai-generative-photo.jpg"
             profileSrc="https://png.pngtree.com/element_pic/17/04/20/a8557236ad6130f70c458ce5a6b27ea1.png"
-            title="Sonny"
+            title="Sam"
         /> 
         {/* Story */}
         {/* Story */}
