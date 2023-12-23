@@ -29,7 +29,7 @@ function StoryReel() {
             profileSrc="https://png.pngtree.com/element_pic/17/04/20/a8557236ad6130f70c458ce5a6b27ea1.png"
             title="Sam"
         /> 
-        {/* Story */}
+        {/* Story */}  
         {/* Story */}
         {/* Story */}
         {/* Story */}
