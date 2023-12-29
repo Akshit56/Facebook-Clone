@@ -32,23 +32,27 @@ function MessageSender() {
         setImageUrl("");
 
     }
+    console.log(user.displayName)
+
   return (
     <div className='messageSender'>
         <div className='messageSender__top'>
             <Avatar src={user.photoURL} />
+
             <form>
-                <input
+                <input 
                 value={input}
-                onChange={e => setInput(e.target.value) }
+                onChange={(e) => setInput(e.target.value) }
                 type = "text" className='messageSender__input'
-                placeholder="What's on your mind, ${user.displayName} ?"/>
+                placeholder='Whats on your mind, ${user.displayName} ?' 
+                />
                 <input 
                 value={imageUrl}
                 onChange={e => setImageUrl(e.target.value)}
                 placeholder='Image URL (Optional)' />
 
                 <button onClick={handleSubmit} type="submit" > 
-                    Hidden Submit
+                    Hidden Submit 
                 </button> 
 
             </form>
