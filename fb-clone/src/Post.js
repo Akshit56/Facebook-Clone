@@ -7,7 +7,11 @@ import NearMeIcon from '@mui/icons-material/NearMe';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
+
+
 function Post( {profilePic, image, username, timestamp, message} ) {
+    console.log('Timestamp:', timestamp);
+
   return (
     <div className='post' >
         <div className='post__top'>
@@ -15,7 +19,8 @@ function Post( {profilePic, image, username, timestamp, message} ) {
             className='post__avatar' />
             <div className='post__topInfo'>
                 <h3>{username}</h3>
-                <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
+                <p>{timestamp && new Date(timestamp?.toDate()).toUTCString()}</p>
+
             </div>
         </div>
         <div className='post__bottom'>
